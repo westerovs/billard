@@ -21,6 +21,11 @@ const loop = () => {
   b.update()
   b.draw()
   b.bounceOfWalls()
+  
+  if (b.idle) {
+    console.log(b.idle)
+  }
+  
   requestAnimationFrame(loop)
 }
 

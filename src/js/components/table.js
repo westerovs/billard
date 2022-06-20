@@ -1,21 +1,23 @@
 import { ctx, canvas } from './canvas.js';
 
+const WOOD_WIDTH = 60
+
 const drawCloth = () => {
   ctx.fillStyle = 'rgb(26, 130, 30)'
   ctx.fillRect(0, 0, canvas.width, canvas.height)
 }
 
 const drawWood = () => {
-  const woodWidth = 60
 
   ctx.fillStyle = 'hsl(16, 76%, 30%)'
-  ctx.fillRect(0, 0, canvas.width, woodWidth)
-  ctx.fillRect(0, canvas.height - woodWidth, canvas.width, woodWidth)
-  ctx.fillRect(0, 0, woodWidth, canvas.height)
-  ctx.fillRect(canvas.width - woodWidth, 0, woodWidth, canvas.height)
+  ctx.fillRect(0, 0, canvas.width, WOOD_WIDTH)
+  ctx.fillRect(0, canvas.height - WOOD_WIDTH, canvas.width, WOOD_WIDTH)
+  ctx.fillRect(0, 0, WOOD_WIDTH, canvas.height)
+  ctx.fillRect(canvas.width - WOOD_WIDTH, 0, WOOD_WIDTH, canvas.height)
 }
 
 export {
   drawCloth,
   drawWood,
+  WOOD_WIDTH
 }
