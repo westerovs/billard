@@ -57,6 +57,6 @@ img {
   width: min-content;
 }
 
-canvas {
-  outline: 1px solid black;
+#game {
+  border-radius: 50px;
 }

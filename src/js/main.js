@@ -1,6 +1,7 @@
-import { drawCloth } from './components/table.js';
+import { drawCloth, drawWood } from './components/table.js';
 
 drawCloth()
+drawWood()
 
 
 
