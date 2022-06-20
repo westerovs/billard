@@ -52,8 +52,11 @@ img {
 .wrapper {
   position: relative;
   margin: 50px auto;
-  min-width: 400px;
-  width: 400px;
   min-height: 400px;
-  outline: 2px dashed gold;
+  /*outline: 2px dashed gold;*/
+  width: min-content;
+}
+
+canvas {
+  outline: 1px solid black;
 }
